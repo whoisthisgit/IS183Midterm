@@ -2,8 +2,62 @@
 <html>
 <head>
     <title>KevinJames - IS183 Midterm</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
     <!-- html comment -->
+    <div class="wrapper login-page">
+        <header class="main-header box-shadow">
+            
+        </header>
+        <section class="content-bottom one-column">
+            <article class="main-content one-column">
+                <div class="login-form">
+                    <h1 class="login-h1">Login</h1>
+                    <label for="username">Username</label>
+                    <input class="login-input" type="text" id="username">
+                    <label for="password">Password</label>
+                    <input class="login-input" type="password" id="password">
+                    <button onclick="login()" id="btn-login" class="login-button">Login</button>
+                    <div id="error-container">
+                    <p id="error-text" class="error-message">asdfasdf</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer class="footer box-shadow">
+        <p class="copyright">
+            (c) Created by Kevin James
+        </p>
+    </footer>
+
+    <script>
+        function login() {
+
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+
+            console.log(username);
+            console.log(password);
+
+            let errorContainer = document.getElementById('error-container');
+            let errorText = document.getElementById('error-text');
+
+            if(username == 'lucas' && password == 'phan') {
+                location.href = './home/home.html';
+            }
+            else {
+                //errorContainer.style;
+                errorText.style.display = 'block';
+                errorText.innerHTML = 'Error please try again...';
+            
+                let handle = setInterval(() => {
+                    errorContainer.style.display = 'none';
+                    clearInterval(handle);
+                },2000);
+            }
+        }
+    </script>
 </body>
 </html>

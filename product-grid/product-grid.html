@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Grid</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <style>
+    body {
+        background-image: url("../images/table-background.jpg");
+    }
+    section.three-column {
+        margin-top:30px;
+    }
+    aside.three-column {
+        width:15%;
+    }
+    aside.sidebar-right {
+        width:18%;
+        float:right;
+        background-color: #CCC;
+        height:100%;
+        padding:1%;
+        min-height:480px;
+    }
+    article.three-column-content {
+        position:absolute;
+        left:15%;
+        float:none;
+    }
+    table.courses-table {
+        width:100%;
+    }
+    table.courses-table tr {
+        padding:3px 5px;
+        background-color: ghostwhite;
+        border:1px solid #CCC;
+    }
+    table.courses-table tr:nth-child(even) {
+        background-color: #CCC;
+    }
+    table.courses-table tr:nth-child(odd) {
+        background-color: #FFF;
+    }
+    table.courses-table tr:hover {
+        background-color: yellow;
+    }
+    .main-content {
+        height: 800px;
+        width: 81%;
+    }
+    .sidebar {
+        height: 800px;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header box-shadow">
+            <h1>Kevin James</h1>>
+        </header>
+        <section class="content-bottom">
+            <aside class="sidebar">
+                <ul class="sidebar-links">
+                    <li><a href="../home/home.html">Home</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../contact-us/contact-us.html">Contact Us</a></li>
+                </ul>
+            </aside>
+            <article class="main-content three-column-content">
+                <div class="gallery">
+                    <h1>Our Products</h1>
+                    <table class="courses-table" colspan="1" border="1">
+                        <tr>
+                            <th>Image</th>
+                            <th>Item #</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td><img src="../images/gallery/1.png" alt="College"></td>
+                            <td>1</td>
+                            <td>The College Years</td>
+                            <td>Released between August 2015 and July 2016, these five levels detail what happened to the SLB family ever since college began.</td>
+                            <td>$9.99</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../images/gallery/2.png" alt="SLB"></td>
+                            <td>2</td>
+                            <td>The SLB Trilogy</td>
+                            <td>Spanning from August 2009 to February 2014, these three games are the main adventures.</td>
+                            <td>$59.99</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../images/gallery/3.png" alt="Pop-Tarts"></td>
+                            <td>3</td>
+                            <td>Pop-Tarts</td>
+                            <td>Our studies show that Pop-Tarts are great. Since we also enjoy eating them, others should have the ability to.</td>
+                            <td>$4.99 per box, $0.99 per package</td>
+                        </tr>
+                          <tr>
+                            <td><img src="../images/gallery/4.jpg" alt="Scatman"></td>
+                            <td>4</td>
+                            <td>The College Years</td>
+                            <td>Released between August 2015 and July 2016, these five levels detail what happened to the SLB family ever since college began.</td>
+                            <td>$9.99</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../images/gallery/5.png" alt="SMF"></td>
+                            <td>5</td>
+                            <td>The SLB Trilogy</td>
+                            <td>Spanning from August 2009 to February 2014, these three games are the main adventures.</td>
+                            <td>$59.99</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../images/gallery/6.png" alt="WMM"></td>
+                            <td>6</td>
+                            <td>Pop-Tarts</td>
+                            <td>Our studies show that Pop-Tarts are great. Since we also enjoy eating them, others should have the ability to.</td>
+                            <td>$4.99 per box, $0.99 per package</td>
+                        </tr>              
+                    </table>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer class="footer box-shadow">
+        <p class="copyright">
+            (c) Created by Kevin James
+        </p>
+    </footer>
+</body>
+</html>

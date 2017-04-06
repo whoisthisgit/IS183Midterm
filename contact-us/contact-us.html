@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+    <style>
+    body {
+        background-image: url("../images/contact-background.jpg");
+    }
+    section.three-column {
+        margin-top:30px;
+    }
+    aside.content-bottom {
+        width:15%;
+    }
+    article.main-content {
+        width:61%;
+        position:absolute;
+        left:15%;
+        float:none;
+    }
+    .main-header {
+        height: 200px;
+    }
+    </style>
+    <div class="wrapper">
+        <header class="main-header box-shadow">
+            <img src="../images/logo.png" alt="logo">
+        </header>
+        
+        <section class="content-bottom">
+            <aside class="sidebar">
+                <ul class="sidebar-links">
+                    <li><a href="../home/home.html">Home</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../product-grid/product-grid.html">Product Grid</a></li>
+                </ul>
+            </aside>
+        
+            <article class="main-content">
+                <div class="contact-form">
+                    <h1 class="contact-h1">Contact Us</h1>
+                    <label for="firstname">First Name:</label>
+                    <input class="contact-input" type="text" id="firstname">
+                    <p>/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/</p>
+                    <label for="lastname">Last Name:</label>
+                    <input class="contact-input" type="text" id="lastname">
+                    <p>/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/</p>
+                    <label for="email">E-Mail Address:</label>
+                    <input class="contact-input" type="text" id="email">
+                    <p>/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/</p>
+                    <button onclick="login()" id="btn-contact" class="contact-button">Submit</button>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer class="footer box-shadow">
+        <p class="copyright">
+            (c) Created by Kevin James
+        </p>
+    </footer>
+
+    <script>
+        function login() {
+            location.href = '../home/home.html';
+        }
+
+    </script>
+</body>
+</html>
